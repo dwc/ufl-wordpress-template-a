@@ -1,0 +1,8 @@
+#content h3{font-size:120%;padding:10px 0 0;}
+#content ul{margin-left:45px;}
+.date{background:#eee;border-top:1px solid #ddd;border-bottom:1px solid #ddd;width:520px;margin:2px 0 5px;padding:2px 5px;font-size:90%;}
+.navigation{width:200px;clear:both;}
+.post{margin:0;}
+.storycontent{float:none;width:530px;}
+.storycontent p{font-size:95%;width:525px;}
+code{color:#000;}

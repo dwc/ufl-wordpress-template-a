@@ -1,0 +1,16 @@
+#subscribe-email{margin-bottom:20px;}
+#subscribe-email label{vertical-align:top;width:6em;}
+#subscribe-email-result{background:#b9dcf4;color:#111;margin:0 2px 5px;padding:5px;}
+#subscribe-email-result-loading{background:url(../images/loading.gif) top center no-repeat;text-align:center;line-height:3em;padding:60px 5px 5px 5px;}
+#subscribe-email-subscribe,#subscribe-email-unsubscribe{width:9em;margin-right:10px;}
+#subscribe-email-type-immediate,#subscribe-email-type-digest{margin-left:10px;}
+#subscribe-feeds{margin:15px 0 15px 25px;list-style-type:disc;}
+#subscribe-feeds a{padding-left:40px;background:#f1f1f1 url(../images/rss.gif) left center no-repeat;font-size:90%;width:9em;display:block;height:16px;}
+#subscribe-feeds a:hover{color:#ff4a00;}
+#subscribe-feeds li{margin:5px 0;}
+#subscribe-feeds li a{width:150px;}
+#subscribe-feeds ul{margin-left:5px;list-style-type:circle;}
+#subscribe-feeds ul li a{width:138px;}
+#subscribe-feeds ul ul{list-style-type:square;}
+#subscribe-feeds ul ul li a{width:126px;}
+#subscribe-feeds ul,#subscribe-feeds ul ul{padding-left:7px;}

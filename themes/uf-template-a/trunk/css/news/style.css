@@ -1,0 +1,37 @@
+*{margin:0;padding:0;}
+body{text-align:center;background:#D7D6D5 url(../images/bg.gif) repeat-x;color:#333;font:79% Verdana, Geneva, Arial, Helvetica, sans-serif;}
+a{text-decoration:none;}
+a:link,a:visited{color:#0021a5;}
+a:hover,a:active{color:#ff4a00;}
+a.replace{display:block;}
+acronym{border-bottom:1px #666 dashed;}
+code{font-size:130%;color:#000;}
+h1,h2,h3,h4,h5,h6{font-family:'Trebuchet MS', Verdana, Geneva, Arial, Helvetica, sans-serif;}
+h1{font-size:5%;}
+h2{font-size:135%;}
+h3,h4{font-size:115%;color:#111;line-height:105%;}
+img{border:none;}
+ul{list-style-type:none;}
+form#search{position:absolute;top:0;right:0;display:inline;padding-top:2px;}
+form#search input#image{vertical-align:top;}
+h1#logo{position:relative;width:240px;height:41px;/*\*/font-size:14px;overflow:hidden;/**/}
+h1#logo a span{top:0;left:0;display:block;position:absolute;width:100%;height:100%;font-size:1px;background:url(../images/universityOfFlorida.gif);}
+h1#logo a span,.date,.datesml,#audio span,#op-eds span,#video span#footerHome span{cursor:hand;}
+#content{width:500px;padding-left:30px;float:left;}
+#footer #contact{font-size:90%;padding-bottom:2px;}
+#footer{color:#999;clear:both;position:relative;background:url(../images/bg_footer.gif) bottom no-repeat;height:50px;padding:20px 30px 45px;}
+#footer li{/*\*/float:left;/**/border-right:1px solid #ccc;display:inline;padding-right:4px;margin-right:4px;line-height:1em;}
+#footer ul,#footer p{clear:both;width:550px;float:left;line-height:15px;font-size:80%;}
+#footerHome span{/*\*/width:195px;height:54px;background:url(http://images.webadmin.ufl.edu/signatures/UF-Signature-Themeline.gif) 0 0 no-repeat;position:absolute;right:30px;top:20px;/**/}
+#header{height:41px;width:772px;position:relative;text-align:left;margin:0 auto;}
+#mainContainer{background:#fff url(../images/bg_content.gif) top center repeat-y;width:790px;text-align:left;padding-top:20px;margin:0 auto;}
+#priNav h2,#footer h3,.dash{display:none;}
+#sidebar{float:right;width:205px;color:#333;padding:20px 20px 0 0;}
+#sidebar p{margin-bottom:20px;}
+.post{float:left;width:480px;}
+.post p{text-align:justify;}
+
+#banner {
+padding-top: 0;
+margin: 1px 0 20px 10px;
+}

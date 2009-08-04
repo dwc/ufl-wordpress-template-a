@@ -1,0 +1,20 @@
+.optional {
+clear:both;
+}
+br {
+clear:both;
+}
+#submit-submit-wrap{
+text-align:center;
+}
+#submit-submit{
+width: 10em;
+font-size: large;
+}
+.entry input{
+width: 20em;
+}
+.required label {
+display:block;
+margin:10px 0 0 0;
+}
