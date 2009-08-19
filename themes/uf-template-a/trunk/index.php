@@ -2,16 +2,12 @@
 /*
 Template Name: Home Page
 */
-
-$NUMBER_OF_POSTS = 5;
 ?>
 <?php get_header(); ?>
 	<div id="content">
-<?php $my_query = new WP_Query("cat=20&showposts=$NUMBER_OF_POSTS"); ?>
-<?php if ($my_query->have_posts()): ?>
-<?php     $category_name = get_the_category_by_ID($my_query->get_queried_object_id()); ?>
-				<h2 id="secHeader" title="<?php echo $category_name; ?>"><span></span><?php echo $category_name; ?></h2>
-<?php     while ($my_query->have_posts()): $my_query->the_post(); ?>
+<?php if (have_posts()): ?>
+                        <h2 id="secHeader" title="<?php echo bloginfo('title'); ?>"><span></span><?php echo bloginfo('title'); ?></h2>
+<?php     while(have_posts()): the_post(); ?>
 			<div class="post">
 				<h3><a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title(); ?>"><?php the_title(); ?></a></h3>
 				<div class="storycontent">

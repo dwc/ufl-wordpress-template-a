@@ -7,6 +7,12 @@
                 #secHeader span{background: url(<?php echo uf_category_image_url(); ?>)}
 <?php else: ?>
                 #secHeader span{background: url(<?php bloginfo('template_directory') ?>/images/header1.jpg)}
+/*
+                #secHeader span{z-index: -1;}
+                #secHeader {
+                    color:#fff;
+                }
+*/
 <?php endif; ?>
 <?php if (is_home()): ?>
 		@import url(<?php bloginfo('stylesheet_directory'); ?>/css/home.css);
