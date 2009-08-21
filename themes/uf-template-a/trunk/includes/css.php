@@ -5,6 +5,8 @@
 		@import url(<?php bloginfo('stylesheet_directory'); ?>/css/style.css);
 <?php if (class_exists('UfCaategoryImagePlugin')): ?>
                 #secHeader span{background: url(<?php echo uf_category_image_url(); ?>)}
+<?php elseif (is_404()): ?>
+                #secHeader span{background: url(<?php bloginfo('template_directory') ?>/images/404.jpg)}
 <?php else: ?>
                 #secHeader span{background: url(<?php bloginfo('template_directory') ?>/images/header1.jpg)}
 /*

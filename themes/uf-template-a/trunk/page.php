@@ -3,8 +3,12 @@
  * @package WordPress
  * @subpackage UF Template A
  */
+?>
 
-get_header(); ?>
+<?php if(have_posts()): ?>
+
+<?php get_header(); ?>
+
 	<div id="content">
 		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 		<div class="post" id="post-<?php the_ID(); ?>">
@@ -24,3 +28,10 @@ get_header(); ?>
 <?php get_sidebar(); ?>
 
 <?php get_footer(); ?>
+
+<?php else: ?>
+
+<?php     $wp_query->is_404 = true; ?>
+<?php     include(TEMPLATEPATH . '/404.php'); ?>
+
+<?php endif; ?><!-- #page -->
