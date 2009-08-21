@@ -12,7 +12,6 @@ $NEWS_PAGE_ID = $post->ID;
 <?php $my_query = new WP_Query("cat_id=*"); ?>
 <?php if ($my_query->have_posts()): ?>
                         <h2 id="secHeader" title="News"><span></span>News</h2>
-  <?php echo $news_category_id; ?>
 <?php     while ($my_query->have_posts()): $my_query->the_post(); ?>
 			<div class="post">
 				<h3><a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title(); ?>"><?php the_title(); ?></a></h3>
