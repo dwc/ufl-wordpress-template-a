@@ -13,6 +13,7 @@
 	<link rel="alternate" type="text/xml" title="RSS 0.92" href="<?php bloginfo('rss_url'); ?>" />
 	<link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="<?php bloginfo('atom_url'); ?>" />
 
+        <meta name="Template" content="University of Florida Template A" />
 	<meta name="verify-v1" content="deypR2IHzcQOXxyDKP/hMT/jZgFj3gXaTXG8vwJvu+s=" />
 
 <?php include(TEMPLATEPATH . '/includes/css.php'); ?>
