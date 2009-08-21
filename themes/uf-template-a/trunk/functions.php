@@ -6,35 +6,44 @@ function uf_page_list() {
 
     foreach($parents as $parent) {
 
-        // If the current page is a child of a parent page
-        if($parent->ID == $post->post_parent) {
+      // If were displaying search results
+            if(is_search()) {
+?>
+
+            <li><a href="<?php echo get_page_link($parent->ID); ?>"><?php echo $parent->post_title; ?></a></li>
+
+<?php
+	    }
+
+            // If the current page is a child of a parent page
+            elseif($parent->ID == $post->post_parent) {
 ?>
             <li id="activeSec"><a href="<?php echo get_page_link($parent->ID); ?>"><?php echo $parent->post_title; ?></a>
                 <ul id="secNav">
 <?php
-            uf_child_page_list($parent, $post);
+                uf_child_page_list($parent, $post);
 ?>
                 </ul>
             </li>
 <?php
-	}
+	    }
 
-        // If the current page is a parent page
-        elseif($parent->ID == $post->ID) {
+            // If the current page is a parent page
+            elseif($parent->ID == $post->ID) {
 ?>
             <li id="active"><?php echo $parent->post_title; ?>
                 <ul id="secNav">
 <?php
-	   uf_child_page_list($parent);
+	       uf_child_page_list($parent);
 ?>
                 </ul>
             </li>
 <?php
-        }
+            }
 
-        // If it's a news post or category and not a page
-	// This isn't showing up right for popsts
-        elseif((is_category() || is_single()) && $parent->post_title == "News") {
+            // If it's a news post or category and not a page
+	    // This isn't showing up right for popsts
+            elseif((is_category() || is_single()) && $parent->post_title == "News") {
 ?>
             <li id="activeSec"><a href="<?php echo get_page_link($parent->ID); ?>"><?php echo $parent->post_title; ?></a>
                 <ul id="secNav">
@@ -44,14 +53,14 @@ function uf_page_list() {
                 </ul>
             </li>
 <?php
-        }
-
+            }
+	    //          }
         // Default for non-selected pages
         else {
 ?>
             <li><a href="<?php echo get_page_link($parent->ID); ?>"><?php echo $parent->post_title; ?></a></li>
 <?php
-	}
+        }
     }
 }
 
