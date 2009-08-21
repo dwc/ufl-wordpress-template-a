@@ -3,7 +3,9 @@
 	<div id="content">
 		<h2 id="secHeader" title="Not Found"><span></span>Not Found</h2>
 <?php if (is_search()): ?>
-		<h3>Your search - <code><?php the_search_query(); ?></code> - did not match any articles. <br />Suggestions:</h3>
+		<h3>Your search - <code><?php the_search_query(); ?></code> - did not match any articles.</h3>
+
+		<h3>Suggestions:</h3>
 		<ul>
 			<li>Make sure all words are spelled correctly.</li>
 			<li>Try different keywords.</li>
