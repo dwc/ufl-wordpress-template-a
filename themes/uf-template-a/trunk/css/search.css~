@@ -1,0 +1,8 @@
+.date{background:#eee;padding:2px 2px 2px 8px;}
+
+.navigation {padding:4px 0 25px 0;margin-left: 15px; width: 501px; display:block; float:left;}
+.alignleft, .alignright { padding: 0px; margin: 0; float: left; font-size:14px; border:1px blue;}
+
+.alignleft {margin-right:15px;}
+
+.post {border-bottom:1px solid #000;}
