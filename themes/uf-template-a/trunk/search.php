@@ -2,12 +2,11 @@
 <?php     get_header(); ?>
 
 	<div id="content">
-	        <h2 id="secHeader" title="Search Results"><span></span>Search Results</h2>
-		<h3>Search Results For '<?php the_search_query(); ?>'</h3>
+	        <div id="secHeader" title="Search Results"><span></span><h2>Search Results For '<?php the_search_query(); ?>'</h2></div>
 
-		<div class="navigation">
-	   <div class="alignleft"><?php next_posts_link('&laquo; Previous '); ?></div><div class="alignright"><?php previous_posts_link('Next  &raquo;'); ?></div>
-		</div>
+		   <ul class="navigation">
+		       <li class="alignleft"><?php next_posts_link('&laquo; Previous '); ?></li><li class="alignright"><?php previous_posts_link('Next  &raquo;'); ?></li>
+		   </ul>
 
 <?php     while (have_posts()): the_post(); ?>
 		<div class="post">
@@ -23,9 +22,9 @@
 		</div>
 <?php     endwhile; ?>
 
-		<div class="navigation">
-	   <div class="alignleft"><?php next_posts_link('&laquo; Previous '); ?></div><div class="alignright"><?php previous_posts_link('Next  &raquo;'); ?></div>
-		</div>
+		   <ul class="navigation">
+		       <li class="alignleft"><?php next_posts_link('&laquo; Previous '); ?></li><li class="alignright"><?php previous_posts_link('Next  &raquo;'); ?></li>
+		   </ul>
 
 	</div><!-- #content -->
 
