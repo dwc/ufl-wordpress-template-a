@@ -87,31 +87,24 @@ function uf_child_page_list($parent = -1, $post = -1) {
 
                if(is_category()) {
                    foreach($categories as $category) {
-		     if(in_category($category->cat_ID)) {
+ 		       if($category->cat_ID == get_query_var("cat")) {
 ?>
 		   <li id="secActive"><?php echo $category->cat_name; ?></li>
 <?php
-		     }
-		     else {
+		       }
+		       else {
 ?>
 		   <li><a href="<?php echo get_category_link($category->cat_ID); ?>"><?php echo $category->cat_name; ?></a></li>
 <?php
-		     }
+ 		       }
 		   }
 	       }
 
                elseif(is_single()) {
                    foreach($categories as $category) {
-		     if(in_category($category->cat_ID, $post->ID)) {
-?>
-		       <li id="secActive"><?php echo $category->cat_name; ?></li>
-<?php
-		     }
-		     else {
 ?>
 		   <li><a href="<?php echo get_category_link($category->cat_ID); ?>"><?php echo $category->cat_name; ?></a></li>
 <?php
-		     }
 		   }               
 	       }
 
