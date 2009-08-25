@@ -10,29 +10,27 @@
 <?php     if (! is_404()): ?>
 <?php         if (is_attachment() or (function_exists('uf_news_snapshots_is_snapshot') and uf_news_snapshots_is_snapshot())): ?>
 		@import url(<?php bloginfo('stylesheet_directory'); ?>/css/gallery.css);
-<?php         elseif (is_single() or is_page()): ?>
+<?php         elseif (is_single()): ?>
 		@import url(<?php bloginfo('stylesheet_directory'); ?>/css/single.css);
 <?php         elseif (is_archive()): ?>
 		@import url(<?php bloginfo('stylesheet_directory'); ?>/css/archive.css);
 <?php         elseif (is_search()): ?>
 		@import url(<?php bloginfo('stylesheet_directory'); ?>/css/search.css);
+<?php         elseif (is_page_template('news.php')): ?>
+<?php             if(_parent_is_news_page()): ?>
+		@import url(<?php bloginfo('stylesheet_directory'); ?>/css/news.css);
+<?php             endif; ?>
 <?php         endif; ?>
 <?php     endif; ?>
 <?php endif; ?>
 
 
 <?php if (class_exists('UfCaategoryImagePlugin')): ?>
-                #secHeader span{background: url(<?php echo uf_category_image_url(); ?>)}
+                #secHeader {background: url(<?php echo uf_category_image_url(); ?>)}
 <?php elseif (is_404()): ?>
-                #secHeader span{background: url(<?php bloginfo('template_directory') ?>/images/404.jpg)}
+                #secHeader {background: url(<?php bloginfo('template_directory') ?>/images/404.jpg)}
 <?php else: ?>
-                #secHeader span{background: url(<?php bloginfo('template_directory') ?>/images/header1.jpg)}
-/*
-                #secHeader span{z-index: -1;}
-                #secHeader {
-                    color:#fff;
-                }
-*/
+                #secHeader {background: url(<?php bloginfo('template_directory') ?>/images/header1.jpg)}
 <?php endif; ?>
 <?php echo htmlspecialchars(apply_filters('header_style', '')); ?>
 	</style>
