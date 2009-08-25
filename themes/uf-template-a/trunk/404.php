@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 	<div id="content">
-		<h2 id="secHeader" title="Not Found"><span></span>Not Found</h2>
+		<div id="secHeader" title="Not Found"><span></span><h2>Not Found</h2></div>
 <?php if (is_search()): ?>
 		<h3>Your search - <code><?php the_search_query(); ?></code> - did not match any articles.</h3>
 
