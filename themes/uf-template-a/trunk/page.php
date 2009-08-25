@@ -12,7 +12,7 @@
 	<div id="content">
 		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 		<div class="post" id="post-<?php the_ID(); ?>">
-		<h2 id="secHeader" title="<?php echo the_title(); ?>"><span></span><?php echo the_title(); ?></h2>
+		<div id="secHeader" title="<?php echo the_title(); ?>"><span></span><h2><?php echo the_title(); ?></h2></div>
 
 			<div class="entry">
 				<?php the_content('<p class="serif">Read the rest of this page &raquo;</p>'); ?>
