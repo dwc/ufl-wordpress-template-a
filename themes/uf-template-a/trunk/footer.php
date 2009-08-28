@@ -26,10 +26,10 @@
 	<p>This page was last updated <?php the_modified_date(); ?>.</p>
 </div>
 
-<?php wp_footer(); ?>
+
 
 </div><!-- #mainContainer -->
-<script type="text/javascript" src="http://www.google-analytics.com/ga.js"></script><script type="text/javascript">/* var pageTracker = _gat._getTracker("UA-3703196-21"); pageTracker._trackPageview(); */</script>
+<?php wp_footer(); ?>
 </body>
 </html>
 <!-- <?php echo $wpdb->num_queries; ?> queries. <?php timer_stop(1); ?> seconds. -->
