@@ -12,8 +12,9 @@
 	    <li><a href="http://webmail.ufl.edu/">WebMail</a></li>
 	    <li><a href="http://www.questions.ufl.edu/">Ask UF</a></li>
 	</ul>
-
+<?php if (class_exists('UfGoogleAnalyticsPlugin')): ?>
 	<p>This page uses <a href="http://www.google.com/analytics/">Google Analytics</a> (<a href="http://www.google.com/intl/en_ALL/privacypolicy.html">Google Privacy Policy</a>)</p>
+<?php endif; ?>
 	<h3>General Site Information</h3>
 	<ul>
 	    <li><a href="http://www.ufl.edu/disability/">Disability Services</a></li>
