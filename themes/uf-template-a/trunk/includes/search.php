@@ -11,6 +11,10 @@
 		<label for="searchbox">
 			<input name="query" id="searchbox" type="text" size="20" value="<?php echo (uf_search_query() ? htmlspecialchars(uf_search_query()) : 'Search'); ?>" alt="Search" onfocus="select();" />
 		</label>
-		<input name="image" id="image" type="image" src="<?php bloginfo('stylesheet_directory'); ?>/images/searchEnter.gif" alt="Go" />
+<?php     if (class_exists('UfTemplateColorSchemesPlugin')): ?>	        
+		<input name="image" id="image" type="image" src="<?php bloginfo('stylesheet_directory'); ?>/images/<?php echo uf_template_color_scheme(); ?>/searchEnter.gif" alt="Go" />
+<?php else: ?>
+	        <input name="image" id="image" type="image" src="<?php bloginfo('stylesheet_directory'); ?>/images/searchEnter.gif" alt="Go" />
+<?php endif; ?>
 	</form>
 <?php endif; ?>

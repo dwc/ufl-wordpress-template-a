@@ -32,5 +32,22 @@
 <?php else: ?>
                 #secHeader {background: url(<?php bloginfo('template_directory') ?>/images/header1.jpg)}
 <?php endif; ?>
+
+<?php if (class_exists('UfTemplateColorSchemesPlugin')): ?>
+
+<?php     if (uf_template_color_scheme()): ?>
+
+                body { 
+		    background: #fff url(<?php bloginfo('template_directory') ?>/images/<?php echo uf_template_color_scheme(); ?>/bg.jpg) repeat-x;
+		}
+
+                h1#logo a span {
+		    background:url(<?php bloginfo('template_directory') ?>/images/<?php echo uf_template_color_scheme(); ?>/universityOfFlorida.gif);
+		}
+                
+<?php     endif; ?>
+
+<?php endif; ?>
+
 <?php echo htmlspecialchars(apply_filters('header_style', '')); ?>
 	</style>
