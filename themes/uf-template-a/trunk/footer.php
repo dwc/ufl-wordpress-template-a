@@ -12,9 +12,7 @@
 	    <li><a href="http://webmail.ufl.edu/">WebMail</a></li>
 	    <li><a href="http://www.questions.ufl.edu/">Ask UF</a></li>
 	</ul>
-<?php if (class_exists('UfGoogleAnalyticsPlugin')): ?>
-	<p>This page uses <a href="http://www.google.com/analytics/">Google Analytics</a> (<a href="http://www.google.com/intl/en_ALL/privacypolicy.html">Google Privacy Policy</a>)</p>
-<?php endif; ?>
+<?php include(TEMPLATEPATH . '/includes/analytics.php'); ?>
 	<h3>General Site Information</h3>
 	<ul>
 	    <li><a href="http://www.ufl.edu/disability/">Disability Services</a></li>
@@ -23,11 +21,9 @@
 	</ul>
  
    </div>
-	<p>&copy; <a href="http://www.ufl.edu/" id="footerHome" title="University of Florida">University of Florida<span></span></a>, Gainesville, FL 32611; (352) 392-3261.</p>
+   <p>&copy; <a href="http://www.ufl.edu/" id="footerHome" title="University of Florida">University of Florida<span></span></a><?php include(TEMPLATEPATH . '/includes/aup.php'); ?>.</p>
 	<p>This page was last updated <?php the_modified_date(); ?>.</p>
 </div>
-
-
 
 </div><!-- #mainContainer -->
 <?php wp_footer(); ?>
