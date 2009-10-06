@@ -207,55 +207,67 @@ float:left;
 font:125%/18px 'Trebuchet MS', verdana, geneva, Arial, Helvetica, sans-serif;
 }
 
-#priNav li a,#priNav #active, #secNav #secActive {
-background:url(../images/pointer.gif) no-repeat 10px 11px;
+#priNav li a,#priNav #active {
 border-bottom:1px solid #e6e6e6;
 color:#0021a5;
 display:block;
-float:left;
 letter-spacing:1px;
 padding:7px 0 6px 20px;
 width:230px;
 }
 
-#secNav, #secActive, #secNav li a {
-background:url(../images/pointer-small.gif) no-repeat 10px 13px;
+#priNav li a,#priNav #active {
+float:left;
+background:url(../images/pointer.gif) no-repeat 10px 11px;
 }
 
-#priNav #active, #secNav #secActive {
+#priNav #active {
 color:#000;
 }
 
+#priNav li a:hover {
+background-color:#CFD5EE;
+}
+
+#priNav #activeSec a  {
+border: none;
+}
+
 #priNav #activeSec {
+padding-bottom: 6px;
 border-bottom:1px solid #e6e6e6;
 }
 
-#priNav #activeSec a {
-
-border:none;
+#priNav #activeSec ul {
+margin-left:20px;
 }
 
-#secNav li {
-float:right;
+#priNav li ul {
+margin-top: 4px;
+}
+
+#priNav li ul li {
+font-size: 16px;
+}
+
+#priNav li ul li a {
+background:url(../images/pointer-small.gif) no-repeat 10px 13px;
+border: none;
 }
 
 #secNav #secActive {
-float:right;
-}
-
-#secNav li a, #secNav #secActive {
-border:none;
-font-size:16px;
-width: 210px;
+background:url(../images/pointer-small.gif) no-repeat 10px 13px;
+padding:7px 0 6px 20px;
+color:#000;
 }
 
 /*\*/* html #priNav li a, * html #priNav #active{
 width:248px;
 }/**/
 
-#priNav li a:hover {
-background-color:#CFD5EE;
-}
+/*\*/* html #secNav li a, * html #secNav #secActive{
+width:225px;
+}/**/
 
 #related {
 padding:210px 8px 0;
@@ -318,3 +330,25 @@ width:484px;
 background:#eee;
 }
 
+/*
+#secNav #secActive, #secNav li a {
+margin:0;
+padding:0;
+background:none;
+background:url(../images/pointer-small.gif) no-repeat 10px 13px;
+}
+
+#secNav li {
+float:right;
+}
+
+#secNav #secActive {
+float:right;
+}
+
+#secNav li a, #secNav #secActive {
+border:none;
+font-size:16px;
+width: 210px;
+}
+*/
