@@ -14,10 +14,8 @@
 	<link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="<?php bloginfo('atom_url'); ?>" />
 
         <meta name="Template" content="University of Florida Template A" />
-	<meta name="verify-v1" content="deypR2IHzcQOXxyDKP/hMT/jZgFj3gXaTXG8vwJvu+s=" />
 
 <?php include(TEMPLATEPATH . '/includes/css.php'); ?>
-<?php include(TEMPLATEPATH . '/includes/javascript.php'); ?>
 <?php wp_head(); ?>
 </head>
 

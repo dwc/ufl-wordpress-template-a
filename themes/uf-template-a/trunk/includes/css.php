@@ -8,8 +8,6 @@
 <?php else: ?>
 		@import url(<?php bloginfo('stylesheet_directory'); ?>/css/subpage.css);
 <?php     if (! is_404()): ?>
-<?php         if (is_attachment() or (function_exists('uf_news_snapshots_is_snapshot') and uf_news_snapshots_is_snapshot())): ?>
-		@import url(<?php bloginfo('stylesheet_directory'); ?>/css/gallery.css);
 <?php         elseif (is_single()): ?>
 		@import url(<?php bloginfo('stylesheet_directory'); ?>/css/single.css);
 <?php         elseif (is_archive()): ?>
@@ -17,11 +15,10 @@
 <?php         elseif (is_search()): ?>
 		@import url(<?php bloginfo('stylesheet_directory'); ?>/css/search.css);
 <?php         elseif (is_page_template('news.php')): ?>
-<?php             if(_parent_is_news_page()): ?>
+<?php             if(_uf_parent_is_news_page()): ?>
 		@import url(<?php bloginfo('stylesheet_directory'); ?>/css/news.css);
 <?php             endif; ?>
 <?php         endif; ?>
-<?php     endif; ?>
 <?php endif; ?>
 
 
@@ -49,5 +46,4 @@
 
 <?php endif; ?>
 
-<?php echo htmlspecialchars(apply_filters('header_style', '')); ?>
 	</style>

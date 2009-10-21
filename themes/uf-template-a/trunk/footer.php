@@ -22,7 +22,6 @@
  
    </div>
    <p>&copy; <a href="http://www.ufl.edu/" id="footerHome" title="University of Florida">University of Florida<span></span></a><?php include(TEMPLATEPATH . '/includes/aup.php'); ?>.</p>
-	<p>This page was last updated <?php the_modified_date(); ?>.</p>
 </div>
 
 </div><!-- #mainContainer -->

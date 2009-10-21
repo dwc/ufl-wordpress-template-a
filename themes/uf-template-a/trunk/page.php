@@ -19,6 +19,7 @@
 
 				<?php wp_link_pages(array('before' => '<p><strong>Pages:</strong> ', 'after' => '</p>', 'next_or_number' => 'number')); ?>
 
+	                        <p>Last updated <?php the_modified_date(); ?>.</p>
 			</div>
 		</div>
 		<?php endwhile; endif; ?>
@@ -34,4 +35,4 @@
 <?php     $wp_query->is_404 = true; ?>
 <?php     include(TEMPLATEPATH . '/404.php'); ?>
 
-<?php endif; ?><!-- #page -->
+<?php endif; ?>

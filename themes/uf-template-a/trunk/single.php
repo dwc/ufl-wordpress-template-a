@@ -22,5 +22,4 @@
 <?php     $wp_query->is_404 = true; ?>
 <?php     include(TEMPLATEPATH . '/404.php'); ?>
 
-<?php endif; ?><!-- #single -->
-
+<?php endif; ?>

@@ -10,15 +10,11 @@
             </ul>
     </div>
 
-<?php     /* End navigation */ ?>
-
 <?php     /* End homepage sidebar */ ?>
 
 <?php else: ?>
 
 <?php     /* Subpage sidebar */ ?>
-
-<?php     /* Category archives */ ?>
         <div id="priNav">
         <h2>Primary Navigation</h2>
             <ul>
@@ -28,13 +24,8 @@
             </ul>
     </div>
 
-<?php     /* End category archives */ ?>
-
-<?php     /** Date archives */ ?>
-
-<?php     /* End date archives */ ?>
-
 <?php     /* End subpage sidebar */ ?>
+
 <?php endif; ?>
 
-	</div><!-- #sidebar -->
+     </div><!-- #sidebar -->
