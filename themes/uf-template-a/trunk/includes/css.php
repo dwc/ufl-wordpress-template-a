@@ -7,8 +7,7 @@
 		@import url(<?php bloginfo('stylesheet_directory'); ?>/css/home.css);
 <?php else: ?>
 		@import url(<?php bloginfo('stylesheet_directory'); ?>/css/subpage.css);
-<?php     if (! is_404()): ?>
-<?php         elseif (is_single()): ?>
+<?php         if (is_single()): ?>
 		@import url(<?php bloginfo('stylesheet_directory'); ?>/css/single.css);
 <?php         elseif (is_archive()): ?>
 		@import url(<?php bloginfo('stylesheet_directory'); ?>/css/archive.css);
