@@ -22,10 +22,6 @@
 		<h3>Try the Home Page</h3>
 		<p>If you are looking for recent news or information about our organization, try the <a href="<?php bloginfo('url'); ?>">home page</a>. Otherwise, start at the <a href="http://www.ufl.edu/">UF Home Page</a>.</p>
 
-<!--
-		<h3>Browse the Archives</h3>
-		<p>If you are looking for articles on a specific topic or from a specific time period, try browsing the archives.</p>
--->
 		<h3>Search</h3>
 		<p>Use the search box near the top of the page to locate the information you want. Tips for searching:</p>
 		<ul>
