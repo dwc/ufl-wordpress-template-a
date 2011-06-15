@@ -1,0 +1,17 @@
+#secHeader span { z-index: -1; }
+#secHeader h2 { 
+color: #fff; 
+position: absolute;
+bottom:0;
+left: 0;
+padding: 15px;
+width: 225px;
+}
+
+#secHeader h2 a {
+color:#fff;
+}
+
+.alignright { float: right; display: inline; }
+
+a img { border: none; }

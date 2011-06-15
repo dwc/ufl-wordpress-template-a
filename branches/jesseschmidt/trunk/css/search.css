@@ -1,0 +1,16 @@
+.date{background:#eee;padding:2px 2px 2px 8px;}
+
+.navigation li { 
+list-style-type: none;
+margin: 0;
+display: inline;
+font-size: 16px;
+}
+
+.alignleft a {
+margin: 0 13px 0 0;
+}
+
+.post {margin-bottom:05px;}
+
+#content h4 {font-size:16px;}
