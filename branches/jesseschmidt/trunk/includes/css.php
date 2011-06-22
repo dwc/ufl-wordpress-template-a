@@ -1,4 +1,3 @@
-	<link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url'); ?>" media="screen" />
 	<link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_directory'); ?>/css/print.css" media="print" />
 	<style type="text/css" media="screen">
 		@import url(<?php bloginfo('stylesheet_directory'); ?>/css/basic.css);
