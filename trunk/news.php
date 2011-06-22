@@ -7,7 +7,7 @@ Template Name: News
 	<div id="content">
 
 <?php $news_category_id = get_cat_id('News'); ?>
-<?php $my_query = new WP_Query("cat_id=" . $news_category_id); ?>
+<?php $my_query = new WP_Query('cat=' . $news_category_id); ?>
 
 <?php if ($my_query->have_posts()): ?>
                         <div id="secHeader" title="News"><span></span><h2>News</h2></div>
@@ -31,7 +31,7 @@ Template Name: News
 		   </ul>
 
 <?php else: ?>
-				<h2 id="secHeader" title="News"><span></span>News</h2>
+				<div id="secHeader" title="News"><span></span><h2>News</h2></div>
                                 <h3>No News</h3>
                                 <p>We're sorry. We don't have any news yet.</p>
 <?php endif; ?>

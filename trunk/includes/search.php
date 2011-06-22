@@ -14,7 +14,7 @@
 <?php     if (class_exists('UfTemplateColorSchemesPlugin')): ?>	        
 		<input name="image" id="image" type="image" src="<?php bloginfo('stylesheet_directory'); ?>/images/<?php echo uf_template_color_scheme(); ?>/searchEnter.gif" alt="Go" />
 <?php else: ?>
-	        <input name="image" id="image" type="image" src="<?php bloginfo('stylesheet_directory'); ?>/images/searchEnter.gif" alt="Go" />
+	     <input name="image" id="image" type="image" src="<?php bloginfo('stylesheet_directory'); ?>/images/searchEnter.gif" alt="Go" />
 <?php endif; ?>
 	</form>
 <?php endif; ?>

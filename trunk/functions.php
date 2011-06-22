@@ -142,4 +142,17 @@ function _uf_parent_is_news_page() {
     return $result;
 }
 
+/** Tell WordPress to run uf_template_a_setup() when the 'after_setup_theme' hook is run. */
+add_action( 'after_setup_theme', 'uf_template_a_setup' );
+
+/**
+ * Sets up theme defaults and registers support for various WordPress features.
+ */
+function uf_template_a_setup() {
+	// This theme uses wp_nav_menu() in one location.
+	register_nav_menus( array(
+		'primary' => __( 'Primary Navigation' ),
+	) );
+}
+
 ?>
