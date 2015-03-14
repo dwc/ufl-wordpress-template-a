@@ -1,0 +1,3 @@
+You will need to download from the [Source](http://code.google.com/p/ufl-wordpress-template-a/source/checkout) section of this project in order to get the latest version of the template.
+
+For use by web managers at the University of Florida who wish to implement a single instance of [WordPress](http://wordpress.org/) using the [Template A](http://www.webadmin.ufl.edu/resources/templates/) from [Web Administration](http://www.webadmin.ufl.edu/).
